@@ -1,7 +1,8 @@
 n=input()
-v=[]
-for i in n:
-    i=i.lower()
-    if i!=' ' and n.count(i)==1 and i not in v:
-        v.append(i)
-print(''.join(sorted(v)))
+n=n.lower()
+s=set(n)
+c=sorted(list(s))
+if c.count(' ')>=1:
+    v=c.index(' ')
+    c.pop(v)
+print(''.join(c))
