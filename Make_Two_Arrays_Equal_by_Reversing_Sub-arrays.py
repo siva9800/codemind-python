@@ -1,0 +1,5 @@
+l1=int(input())
+a=list(map(int,input().split()))
+l2=int(input())
+t=list(map(int,input().split()))
+print(sorted(a)==sorted(t))
